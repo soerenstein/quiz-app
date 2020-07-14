@@ -50,7 +50,8 @@ nav {
 
 h1 {
     text-align: center;
-
+    
+    height: 48px;
     margin: 0px;
 }
 
@@ -98,4 +99,13 @@ li {
     padding: 10px;
     border-radius: 6px;
     font-size: 16px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.menu {
+    filter: grayscale(0);
+    
 }
