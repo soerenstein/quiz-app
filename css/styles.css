@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.m-8 {
+    margin: 8px; 
+}
+
 body {
     font-size: 112.5%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -26,9 +30,9 @@ header {
 main {
     display: flex;
     flex-wrap: wrap;    
-    padding-top: 68px;
+    padding-top: 80px;
 }
- 
+
 footer {
     position: fixed;
     color: white; 
@@ -58,6 +62,37 @@ h2 {
     margin: 0px;
 }
 
+button {
+    display: flex;
+    color: white; 
+    justify-content: center;
+    background-color: #002B5A;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+ 
+li {
+    justify-content: center;
+    border: solid 1px #002B5A;
+    color: #002B5A; 
+    margin: 10px;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+img {
+    border-radius: 50%;
+}
+
 .box {
     display: flex;
     flex-wrap: wrap;
@@ -73,33 +108,13 @@ h2 {
     box-shadow: 0 5px 30px #39393980;
 } 
 
-button {
-    display: flex;
-    color: white; 
-    justify-content: center;
-    background-color: #002B5A;
-    margin: 8px;
-    padding: 10px;
-    border-radius: 6px;
-    font-size: 16px;
+.box__bookmark {
+    margin-left: 70%;
+    margin-top: -40px;
+    margin-bottom: 20px
 }
 
-ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-}
- 
-li {
-    justify-content: center;
-    background-color: #002B5A;
-    color: white; 
-    margin: 8px;
-    padding: 10px;
-    border-radius: 6px;
-    font-size: 16px;
+.box__tag {
+
 }
 
-img {
-    border-radius: 50%;
-}
