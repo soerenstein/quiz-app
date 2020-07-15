@@ -6,100 +6,105 @@
     <link rel="stylesheet" href="styles.css">
     <title>Quiz-App</title>
 </head>
-<body>
-    <div class="">
-        <header class="co-bar h-48 w-100 c b-shad"> 
-            <img class="h-60" src="img/logo.png" alt="">
-            <h1 class="m-0 co-wtext">Quiz-App</h1>
-        </header>
-   
-        <main> 
-            <section class="box c-box m-20 ml-10 mr-10 mb-20 w-100 b-shad"> <!-- Question-Box-->
-                <img src="" alt=""> <!-- Bookmark-Symbol -->
-                <button class="button box__bookmark co-button c fs-16 co-wtext"><img class="h-15" src="img/logo.png" alt="Logo">Bookmark</button>
-                <h2 class="m-0">Question:</h2>
-                    <p class="co-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsum quidem fugit error natus esse quia unde adipisci omnis. Laudantium, quam. At neque sint atque magni quis tempora ad deserunt.</p> 
-                    
-                        <div class="FAQ"> <!-- Answer-->
-                            <a href="#hide1" class="button hide co-button c fs-16 co-wtext" id="hide1"><img class="h-15" src="img/logo.png" alt="Logo">Show answer</a>
-                            <a href="#show1" class="button show co-button c fs-16 co-wtext" id="show1"><img class="h-15" src="img/logo.png" alt="Logo">Hide answer</a>
-                         
-                                <div class="list m-0 co-text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque recusandae tempora, ipsa cum odio quisquam ad amet.</p>
-                                </div>
-                        </div> <!-- Answer -->
-                
-                <ul class="p-0 c">
-                    <li class="m-5 co-tag co-wtext">Tag 1</li>
-                    <li class="m-5 co-tag  co-wtext">Tag 2</li>
-                    <li class="m-5 co-tag  co-wtext">Tag 3</li>
-                    <li class="m-5 co-tag  co-wtext">Tag 4</li>
-                    <li class="m-5 co-tag  co-wtext">Tag 5</li>
-                    <li class="m-5 co-tag  co-wtext">Tag 6</li>
-                </ul>
-            </section>
+<body class="m-0 co-background">
+    <header class="header center co-bar co-wtext b-shad">QUIZ-APP</header>
 
-            <section class="box c-box m-20 ml-10 mr-10 mb-20 w-100 b-shad"> <!-- Question-Box-->
-                <img src="" alt=""> <!-- Bookmark-Symbol -->
-                <button class="button box__bookmark co-button c fs-16 co-wtext"><img class="h-15" src="img/logo.png" alt="Logo">Bookmark</button>
-                <h2 class="m-0">Question:</h2>
-                    <p class="co-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsum quidem fugit error natus esse quia unde adipisci omnis. Laudantium, quam. At neque sint atque magni quis tempora ad deserunt.</p> 
-                    
-                        <div class="FAQ"> <!-- Answer-->
-                            <a href="#hide1" class="button hide co-button c fs-16 co-wtext" id="hide1"><img class="h-15" src="img/logo.png" alt="Logo">Show answer</a>
-                            <a href="#show1" class="button show co-button c fs-16 co-wtext" id="show1"><img class="h-15" src="img/logo.png" alt="Logo">Hide answer</a>
-                         
-                                <div class="list m-0 co-text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque recusandae tempora, ipsa cum odio quisquam ad amet.</p>
-                                </div>
-                        </div> <!-- Answer -->
-                
-                <ul class="p-0 c">
-                    <li class="m-5 co-tag co-wtext">Tag 1</li>
-                    <li class="m-5 co-tag  co-wtext">Tag 2</li>
-                    <li class="m-5 co-tag  co-wtext">Tag 3</li>
-                    <li class="m-5 co-tag  co-wtext">Tag 4</li>
-                    <li class="m-5 co-tag  co-wtext">Tag 5</li>
-                    <li class="m-5 co-tag  co-wtext">Tag 6</li>
-                </ul>
-            </section>
 
-            <section class="box c-box m-20 ml-10 mr-10 mb-20 w-100 b-shad"> <!-- Question-Box-->
-                <img src="" alt=""> <!-- Bookmark-Symbol -->
-                <button class="button box__bookmark co-button c fs-16 co-wtext"><img class="h-15" src="img/logo.png" alt="Logo">Bookmark</button>
-                <h2 class="m-0">Question:</h2>
-                    <p class="co-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsum quidem fugit error natus esse quia unde adipisci omnis. Laudantium, quam. At neque sint atque magni quis tempora ad deserunt.</p> 
+    <main class="scrolling">
+     
+        <section class="box bor-10 mb-20 b-shad"><!-- Question-Box 1-->
+            <button class="box__bookmark">Bookmark</button>
+                <section class="box__content">
+                    <section class="box__content--question">
+                        <h2 class="mtb-8">Question</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum cumque maxime nemo ullam aperiam delectus sapiente asperiores incidunt.</p>
+                        <div>
+                                <ul class="box__content--list p-0">
+                                    <li class="box__content--li bor-10 co-tag">Tag 1</li>
+                                    <li class="box__content--li bor-10 co-tag">Tag 2</li>
+                                    <li class="box__content--li bor-10 co-tag">Tag 3</li>
+                                    <li class="box__content--li bor-10 co-tag">Tag 4</li>
+                                    <li class="box__content--li bor-10 co-tag">Tag 5</li>
+                                </ul>
+                        </div>
+                        <div class="answer">
+                            
+                            <a href="#hide1" class="hide" id="hide1">Show answer</a>
+                            <a href="#show1" class="show" id="show1">Hide answer</a>
                     
-                        <div class="FAQ"> <!-- Answer-->
-                            <a href="#hide1" class="button hide co-button c fs-16 co-wtext" id="hide1"><img class="h-15" src="img/logo.png" alt="Logo">Show answer</a>
-                            <a href="#show1" class="button show co-button c fs-16 co-wtext" id="show1"><img class="h-15" src="img/logo.png" alt="Logo">Hide answer</a>
-                         
-                                <div class="list m-0 co-text">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque recusandae tempora, ipsa cum odio quisquam ad amet.</p>
-                                </div>
-                        </div> <!-- Answer -->
-                
-                <ul class="p-0 c">
-                    <li class="m-5 co-tag co-wtext">Tag 1</li>
-                    <li class="m-5 co-tag  co-wtext">Tag 2</li>
-                    <li class="m-5 co-tag  co-wtext">Tag 3</li>
-                    <li class="m-5 co-tag  co-wtext">Tag 4</li>
-                    <li class="m-5 co-tag  co-wtext">Tag 5</li>
-                    <li class="m-5 co-tag  co-wtext">Tag 6</li>
-                </ul>
-            </section>
-        </main>
-    </div>    
+                            <div class="list mt-25 mb-20">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque recusandae tempora, ipsa cum odio quisquam ad amet.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="box__content--question">
+    
+                    </section>
+                </section>
+        </section>
 
-        <footer class="co-bar h-48 w-100">
-            <nav> <!-- Symbole durch weiße Symbole ersetzen -->
-                <a class="fs-10 co-wtext"href="index.html" ><img src="img/house.png" href="index.html" alt="">Home</a>
-                <a class="fs-10 co-wtext" href="bookmarks.html"><img src="img/bookmark.png" alt="">Bookmark</a>
-                <a class="fs-10 co-wtext" href="create.html" class="fs-10"><img src="img/form.png" alt="">Create</a>
-                <a class="fs-10 co-wtext" href="profile.html" class="fs-10"><img src="img/profile.png" alt="">Profile</a>
-              
-            </nav>
-        </footer>
-        
+        <section class="box bor-10 mb-30 b-shad"><!-- Question-Box 2-->
+            <button class="box__bookmark">Bookmark</button>
+                <section class="box__content">
+                    <section class="box__content--question">
+                        <h2 class="mtb-8">Question</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum cumque maxime nemo ullam aperiam delectus sapiente asperiores incidunt.</p>
+                        <div>
+                                <ul class="box__content--list p-0">
+                                    <li class="box__content--li bor-10 co-tag">Tag 1</li>
+                                    <li class="box__content--li bor-10 co-tag">Tag 2</li>
+                                    <li class="box__content--li bor-10 co-tag">Tag 3</li>
+                                    <li class="box__content--li bor-10 co-tag">Tag 4</li>
+                                    <li class="box__content--li bor-10 co-tag">Tag 5</li>
+                                </ul>
+                        </div>
+                        <div class="answer">
+                            
+                            <a href="#hide1" class="hide" id="hide1">Show answer</a>
+                            <a href="#show1" class="show" id="show1">Hide answer</a>
+                    
+                            <div class="list mt-25 mb-20">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque recusandae tempora, ipsa cum odio quisquam ad amet.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="box__content--question">
+    
+                    </section>
+                </section>
+        </section>
+    </main>
+
+
+    <footer class="footer co-bar b-shad">
+        <ul class="co-bar footer__list">
+            <li>
+                <a class=" co-wtext" href="index.html">
+                <img src="img/home.png" alt="">
+                <div>Home</div>
+                </a>
+            </li>
+            <li>
+                <a class=" co-wtext" href="bookmarks.html">
+                <img src="img/bookmarks.png" alt="">
+                <div>Bookmarks</div>
+                </a>
+            </li>
+            <li>
+                <a class=" co-wtext" href="create.html">
+                <img src="img/plus.png" alt="">
+                <div>Create</div>
+                </a>
+            </li>
+            <li>
+                <a class=" co-wtext" href="profile.html">
+                <img src="img/profile.png" alt="">
+                <div class="mt-4">Profile</div>
+                </a>
+            </li>
+
+        </ul>
+    </footer> 
+
 </body>
 </html>

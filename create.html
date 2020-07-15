@@ -6,45 +6,63 @@
     <link rel="stylesheet" href="styles.css">
     <title>Create</title>
 </head>
-<body>
-    <header class="co-bar h-48 w-100 c b-shad"> 
-        <img class="h-90" src="img/logo.png" alt="">
-        <h1 class="m-0 co-wtext">Create</h1>
-    </header>
+<body class="co-background">
+    <header class="header center co-bar co-wtext b-shad">CREATE</header>
 
-    <main> 
-        <section class="box c-box m-20 ml-10 mr-10 mb-20 w-100 b-shad">
-            <form action="" method="get" class="">
-                <div class=""> <!-- Question-Form -->
-                    <label for="question">Enter your question:</label>
-                    <input type="text" name="question"> 
-                </div>
-                <div class=""> <!-- Answer-Form -->
-                    <label for="question">Enter your answer:</label>
-                    <input type="text" name="question"> 
-                </div>
+    <main class="scrolling m__create"> 
+        <form action="" method="get" class="box m-20 ml-10 mr-10 mb-20 w-100 p-30 b-shad">
+            <h2 class="create__header co-text">New Question</h2>
+            
+                <section class=""> <!-- Question-Form -->
+                    <label class="create__form--label" for="question">Add question:</label>
+                    <textarea name="question" id="" cols="30" rows="6"></textarea>
+                </section>
+                <section class=""> <!-- Answer-Form -->
+                    <label class="create__form--label" for="question">Add answer:</label>
+                    <textarea name="question" id="" cols="30" rows="6"></textarea>
+                </section>
 
-                <div class=""> <!-- Question-Form -->
-                    <label for="question">Enter your tags:</label>
-                    <input type="text" name="question"> 
-                </div>
+                <section class=""> <!-- Question-Form -->
+                    <label class="create__form--label" for="question">Add tags:</label>
+                    <textarea name="question" id="" cols="30" rows="6"></textarea>
+                </section>
 
-                <div class="">
-                    <input type="submit" value="Submit">
-                </div>
+                <section>
+                    <input class="create__form--button"  type="submit" value="Submit">
+                </section>
             </form>
-        </section>
-
+       
     </main>
 
-    <footer class="co-bar h-48 w-100">
-        <nav> <!-- Symbole durch weiße Symbole ersetzen -->
-            <a class="fs-10 co-wtext"href="index.html" ><img src="img/house.png" href="index.html" alt="">Home</a>
-            <a class="fs-10 co-wtext" href="bookmarks.html"><img src="img/bookmark.png" alt="">Bookmark</a>
-            <a class="fs-10 co-wtext" href="create.html" class="fs-10"><img src="img/form.png" alt="">Create</a>
-            <a class="fs-10 co-wtext" href="profile.html" class="fs-10"><img src="img/profile.png" alt="">Profile</a>
-          
-        </nav>
-    </footer>
+    <footer class="footer co-bar b-shad">
+        <ul class="co-bar footer__list">
+            <li>
+                <a class=" co-wtext" href="index.html">
+                <img src="img/home.png" alt="">
+                <div>Home</div>
+                </a>
+            </li>
+            <li>
+                <a class=" co-wtext" href="bookmarks.html">
+                <img src="img/bookmarks.png" alt="">
+                <div>Bookmarks</div>
+                </a>
+            </li>
+            <li>
+                <a class=" co-wtext" href="create.html">
+                <img src="img/plus.png" alt="">
+                <div>Create</div>
+                </a>
+            </li>
+            <li>
+                <a class=" co-wtext" href="profile.html">
+                <img src="img/profile.png" alt="">
+                <div class="mt-4">Profile</div>
+                </a>
+            </li>
+
+        </ul>
+    </footer> 
+
 </body>
 </html>

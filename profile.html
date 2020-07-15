@@ -6,43 +6,68 @@
     <link rel="stylesheet" href="styles.css">
     <title>Profile</title>
 </head>
-<body>
-    <header class="co-bar h-48 w-100 c b-shad"> 
-        <img class="h-90" src="img/logo.png" alt="">
-        <h1 class="m-0 co-wtext">Profile</h1>
-    </header>
+<body class="co-background">
+    <header class="header center co-bar co-wtext b-shad">PROFILE</header>
 
-    <main> 
-        <section> <!-- -->
-            <img class="b-50" src="img/profile-pic.jpg" alt=""> <!-- Profile photo -->
-            <p>Sören Stein</p> <!-- Name -->
-            <section class="box c-box m-20 ml-10 mr-10 mb-20 w-100 b-shad">
+    <main class=" scrolling">
+        
+        <section>
+            <img class="bor-50 b-shad" src="img/profile-pic.jpg" alt=""> <!-- Profile photo -->
+            <p class="name">Sören Stein</p> <!-- Name -->
+        </section>
+           
+            <section class="box m-20 ml-10 mr-10 mb-20 p-30 b-shad">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsa aspernatur eius recusandae rem debitis.</p> <!-- About yourself -->
  
             <h2>Skills:</h2>
-            <ul class="p-0 c">
-                <li class="m-5 co-tag co-wtext">Tag 1</li>
-                <li class="m-5 co-tag  co-wtext">Tag 2</li>
-                <li class="m-5 co-tag  co-wtext">Tag 3</li>
-                <li class="m-5 co-tag  co-wtext">Tag 4</li>
-                <li class="m-5 co-tag  co-wtext">Tag 5</li>
-                <li class="m-5 co-tag  co-wtext">Tag 6</li>
-            </ul>
+            <div>
+                <ul class="box__content--list p-0">
+                    <li class="box__content--li bor-10 co-tag">Tag 1</li>
+                    <li class="box__content--li bor-10 co-tag">Tag 2</li>
+                    <li class="box__content--li bor-10 co-tag">Tag 3</li>
+                    <li class="box__content--li bor-10 co-tag">Tag 4</li>
+                    <li class="box__content--li bor-10 co-tag">Tag 5</li>
+                </ul>
+        </div>
             </section>
+      
+
+    
         </section>
 
-        <a href="">Logout</a>
+        <a class="submit" href="">Logout</a>
 
     </main>
 
-    <footer class="co-bar h-48 w-100">
-        <nav> <!-- Symbole durch weiße Symbole ersetzen -->
-            <a class="fs-10 co-wtext"href="index.html" ><img src="img/house.png" href="index.html" alt="">Home</a>
-            <a class="fs-10 co-wtext" href="bookmarks.html"><img src="img/bookmark.png" alt="">Bookmark</a>
-            <a class="fs-10 co-wtext" href="create.html" class="fs-10"><img src="img/form.png" alt="">Create</a>
-            <a class="fs-10 co-wtext" href="profile.html" class="fs-10"><img src="img/profile.png" alt="">Profile</a>
-          
-        </nav>
-    </footer>
+    <footer class="footer co-bar b-shad">
+        <ul class="co-bar footer__list">
+            <li>
+                <a class=" co-wtext" href="index.html">
+                <img src="img/home.png" alt="">
+                <div>Home</div>
+                </a>
+            </li>
+            <li>
+                <a class=" co-wtext" href="bookmarks.html">
+                <img src="img/bookmarks.png" alt="">
+                <div>Bookmarks</div>
+                </a>
+            </li>
+            <li>
+                <a class=" co-wtext" href="create.html">
+                <img src="img/plus.png" alt="">
+                <div>Create</div>
+                </a>
+            </li>
+            <li>
+                <a class=" co-wtext" href="profile.html">
+                <img src="img/profile.png" alt="">
+                <div class="mt-4">Profile</div>
+                </a>
+            </li>
+
+        </ul>
+    </footer> 
+
 </body>
 </html>
