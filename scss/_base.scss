@@ -48,13 +48,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .box__bookmark {
     position: absolute;
-    top: -8px;
+    top: -20px;
     right: 15px;
     padding: 10px;
-    border-radius: 6px;
+    border: none;
     text-decoration: none;
-    background-color: #EB5E28;
-    color: #EDF2F4; 
+    background-color: transparent;
 }
 
 .box__content {
