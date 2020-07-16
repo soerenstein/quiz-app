@@ -20,6 +20,7 @@ main {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    grid-row: 2;
  
   }
   
@@ -152,6 +153,7 @@ li > a > div {
     text-decoration: none;
     background-color: #EB5E28;
     color: #EDF2F4; 
+
 }
 
 .list p{
@@ -183,23 +185,15 @@ li > a > div {
 }
 
 .create__form--button {
+    display: block;
+    margin: auto; 
     padding: 10px;
     border-radius: 6px;
     text-decoration: none;
     background-color: #EB5E28;
     color: #EDF2F4; 
-    align-self: center; 
     margin-top: 10px;
-}
-
-.submit {
-    
-    
-    padding: 10px;
-    border-radius: 6px;
-    text-decoration: none;
-    background-color: #EB5E28;
-    color: #EDF2F4; 
+    font-size: large;
 }
 
 // Profile 
