@@ -20,59 +20,21 @@ main {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    grid-row: 2;
- 
   }
   
 h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
    }
   
-.header {
+header {
     display: flex;
     font-size: x-large;
-}
-
-
-.scrolling {
-    overflow-y: scroll;
-    }
-
-.box {
-    position: relative;
-    display: flex; 
-    flex-direction: column;
-    display: flex;
-    border-radius: 10px;
-}
-
-.box__bookmark {
-    position: absolute;
-    top: -20px;
-    right: 15px;
-    padding: 10px;
-    border: none;
-    text-decoration: none;
-    background-color: transparent;
-}
-
-.box__content {
-
-}
-
-.box__content--question {
-    padding: 10px 30px;
-}
-
-.box__content--list {
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: flex-start;
     align-items: center;
-    margin: 10px; 
+    justify-content: center;
 }
 
-.box__content--li {
+
+ul > li {
     list-style: none;
     font-size: small;
     padding: 5px;
@@ -81,122 +43,20 @@ h1, h2, h3, h4, h5, h6 {
     margin: 5px 8px; 
 }
 
-.footer {
+
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     bottom: 0;
 }
 
-.footer__list {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    align-content: center;  
-}
 
-.footer__list li {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+.scrolling {
+    overflow-y: scroll;
+    }
 
-.footer__list li a {
-    display: flex;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-}
 
-li > a > div {
-    font-size: small;
-}
-
-.answer { 
-    display: flex;
-    vertical-align: top; 
-    height: auto; 
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.list {
-    display: none; 
-    height: auto;
-    margin: 0px;
-    float: left;
-}
-
-.show {
-    display: none; 
-}
-
-.hide:target + .show {
-    display: inline; 
-}
-
-.hide:target {
-    display: none; 
-}
-
-.hide:target ~ .list {
-    display:inline; 
-}
-
-.hide, .show {
-    padding: 10px;
-    border-radius: 6px;
-    text-decoration: none;
-    background-color: #EB5E28;
-    color: #EDF2F4; 
-
-}
-
-.list p{
-    height:auto;
-    margin:0;
-}
-
-// Create 
-
-.m__create {
-    display: flex;   
-}
-
-.create__header {
-    text-align: center;
-    font-size: large; 
-    font-weight: bold;
-}
-
-.create__form--label {
-
-    font-size: small;
-}
-
-.create__form--input {
-    width: 70%;
-    padding: 10px; 
-    margin: 5px 20px;
-}
-
-.create__form--button {
-    display: block;
-    margin: auto; 
-    padding: 10px;
-    border-radius: 6px;
-    text-decoration: none;
-    background-color: #EB5E28;
-    color: #EDF2F4; 
-    margin-top: 10px;
-    font-size: large;
-}
-
-// Profile 
 
 .name {
     font-size: x-large;

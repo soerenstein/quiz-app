@@ -1,0 +1,24 @@
+
+
+.footer__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;  
+}
+
+.footer__list li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__list li a {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}

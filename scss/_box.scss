@@ -1,0 +1,30 @@
+
+.box {
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    display: flex;
+    border-radius: 10px;
+}
+
+.box__bookmark {
+    position: absolute;
+    top: -20px;
+    right: 15px;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.box__content--question {
+    padding: 10px 30px;
+}
+
+.box__content--list {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px; 
+}
