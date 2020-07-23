@@ -164,25 +164,17 @@ function showAnswer6() {
   }
 }
 
-function resetInput() {
-  document.getElementById('input1').reset();
-} //   let answerButton1 = document.querySelector('#answerButton1')
-//   answerButton1.addEventListener('click', () => {
-//    function
-//   })
-// Show answer button 
-//     let coll = document.getElementsByClassName("collapsible");
-// let i;
-// for (i = 0; i < coll.length; i++) {
-//   coll[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     let content = this.nextElementSibling;
-//     if (content.style.display === "block") {
-//       content.style.display = "none";
-//     } else {
-//       content.style.display = "block";
-//     }
-//   });
-// } 
-// Input reset
-// let bookmarkButton1 = document.getElementById('input1').reset();
+ //Show answer button 
+     let coll = document.getElementsByClassName("collapsible");
+ let i;
+ for (i = 0; i < coll.length; i++) {
+   coll[i].addEventListener("click", function() {
+     this.classList.toggle("active");
+     let content = this.nextElementSibling;
+     if (content.style.display === "block") {
+       content.style.display = "none";
+     } else {
+       content.style.display = "block";
+     }
+   });
+ } 
