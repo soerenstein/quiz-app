@@ -33,6 +33,9 @@ header {
     justify-content: center;
 }
 
+.displaynone {
+    display: none;
+}
 
 ul > li {
     list-style: none;
@@ -51,12 +54,9 @@ footer {
     bottom: 0;
 }
 
-
-.scrolling {
-    overflow-y: scroll;
-    }
-
-
+// .scrolling {
+//     overflow-y: scroll;
+//     }
 
 .name {
     font-size: x-large;

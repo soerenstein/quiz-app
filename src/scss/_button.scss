@@ -4,41 +4,69 @@
     height: auto; 
     justify-content: center;
     flex-wrap: wrap;
+
 }
 
-.list {
-    display: none; 
-    height: auto;
-    margin: 0px;
-    float: left;
-}
 
-.show {
-    display: none; 
-}
-
-.hide:target + .show {
-    display: inline; 
-}
-
-.hide:target {
-    display: none; 
-}
-
-.hide:target ~ .list {
-    display:inline; 
-}
-
-.hide, .show {
+.collapsible {
     padding: 10px;
     border-radius: 6px;
     text-decoration: none;
     background-color: #EB5E28;
     color: #EDF2F4; 
 
-}
+    width: 60%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #EB5E28;
+  }
 
-.list p{
-    height:auto;
-    margin: 0;
-}
+  .content {
+    padding: 0;
+    display: none;
+    overflow: hidden;
+    text-align: left;
+  }
+
+// .list {
+//     display: none; 
+//     height: auto;
+//     margin: 0px;
+//     float: left;
+// }
+
+// .show {
+//     display: none; 
+// }
+
+// .hide:target + .show {
+//     display: inline; 
+// }
+
+// .hide:target {
+//     display: none; 
+// }
+
+// .hide:target ~ .list {
+//     display:inline; 
+// }
+
+// .hide, .show {
+//     padding: 10px;
+//     border-radius: 6px;
+//     text-decoration: none;
+//     background-color: #EB5E28;
+//     color: #EDF2F4; 
+
+// }
+
+// .list p{
+//     height:auto;
+
+// }
+

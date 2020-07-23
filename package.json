@@ -8,7 +8,7 @@
     "serve": "serve .",
     "sass": "node-sass --output-style compressed src/scss/styles.scss styles.css",
     "sass:watch": "npm run sass -- -w",
-    "babel": "babel src/js/ -d lib",
+    "babel": "babel src/js/ -d .",
     "babel:watch": "npm run babel -- -w"
   },
   "repository": {

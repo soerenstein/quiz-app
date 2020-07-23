@@ -5,17 +5,30 @@
     flex-direction: column;
     display: flex;
     border-radius: 10px;
+    margin-bottom: 50px;
 }
 
 .box__bookmark {
     position: absolute;
-    top: -20px;
-    right: 15px;
+    top: -15px;
+    right: 40px;
     padding: 10px;
     border: none;
     text-decoration: none;
     background-color: transparent;
 }
+
+.bookmark__empty {
+   background: url(img/bookmark-button.png) no-repeat; 
+   width: 40px;
+   height: 40px;
+ }
+
+ .bookmark__filled {
+    background: url(img/bookmarked.png) no-repeat; 
+    width: 40px;
+    height: 40px;
+  }
 
 .box__content--question {
     padding: 10px 30px;
@@ -24,7 +37,7 @@
 .box__content--list {
     display: flex; 
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     margin: 10px; 
 }

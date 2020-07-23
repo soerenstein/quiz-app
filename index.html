@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Quiz-App</title>
-    <script defer src="index.js"></script>
+    <script defer src="src/js/index.js"></script>
 </head>
 <body class="m-0 co-background">
-    <header class="header co-bar co-wtext b-shad">QUIZ-APP</header>
 
 
-    <main class="scrolling">
-     
+
+    <header id="header1" class="header co-bar co-wtext b-shad">QUIZ-APP</header>
+    <header id="header2" class="header displaynone co-bar co-wtext b-shad">BOOKMARKS</header>
+    <header id="header3" class="header displaynone co-bar co-wtext b-shad">CREATE</header>
+    <header id="header4" class="header displaynone co-bar co-wtext b-shad">PROFILE</header>
+
+    <main id="index_page" class="scrolling">
+
         <section class="box mb-20 bor-10 b-shad"><!-- Question-Box 1-->
-            <button class="box__bookmark"><img src="img/bookmark-button.png" alt=""></button>
+            <button id="bookmark1" class="box__bookmark bookmark__empty"><img src="" alt=""></button>
                 <section class="box__content">
                     <section class="box__content--question">
                         <h2 class="mtb-8 co-text">Question</h2>
@@ -28,24 +33,23 @@
                                     <li class="bor-10 co-tag">Tag 5</li>
                                 </ul>
                         </div>
+                       
                         <div class="answer">
-                            
-                            <a href="#hide1" class="hide" id="hide1">Show answer</a>
-                            <a href="#show1" class="show" id="show1">Hide answer</a>
-                    
-                            <div class="list mt-25 mb-20">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque recusandae tempora, ipsa cum odio quisquam ad amet.</p>
-                            </div>
+                        <button id="answerButton1" onclick="showAnswer1()" type="button" class="collapsible">Show answer</button>
+                        <div id="answerDiv1" class="content">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque recusandae tempora, ipsa cum odio quisquam ad amet.</p>
+                        </div> 
                         </div>
                     </section>
                     <section class="box__content--question">
     
                     </section>
                 </section>
-        </section>
+            </section>
+        </div>
 
         <section class="box mb-20 bor-10 b-shad"><!-- Question-Box 2-->
-            <button class="box__bookmark"><img src="img/bookmarked.png" alt=""></button>
+            <button id="bookmark2" class="box__bookmark bookmark__empty"><img src="" alt=""></button>
                 <section class="box__content">
                     <section class="box__content--question">
                         <h2 class="mtb-8 co-text">Question</h2>
@@ -60,14 +64,11 @@
                                 </ul>
                         </div>
                         <div class="answer">
-                            
-                            <a href="#hide1" class="hide" id="hide1">Show answer</a>
-                            <a href="#show1" class="show" id="show1">Hide answer</a>
-                    
-                            <div class="list mt-25 mb-20">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque recusandae tempora, ipsa cum odio quisquam ad amet.</p>
+                            <button id="answerButton1" onclick="showAnswer2()" type="button" class="collapsible">Show answer</button>
+                            <div id="answerDiv2" class="content">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque recusandae tempora, ipsa cum odio quisquam ad amet.</p>
+                            </div> 
                             </div>
-                        </div>
                     </section>
                     <section class="box__content--question">
     
@@ -75,8 +76,8 @@
                 </section>
         </section>
 
-        <section class="box mb-20 bor-10 b-shad"><!-- Question-Box 1-->
-            <button class="box__bookmark"><img src="img/bookmark-button.png" alt=""></button>
+        <section class="box mb-20 bor-10 b-shad"><!-- Question-Box 3-->
+            <button id="bookmark3" class="box__bookmark bookmark__empty"><img src="" alt=""></button>
                 <section class="box__content">
                     <section class="box__content--question">
                         <h2 class="mtb-8 co-text">Question</h2>
@@ -91,14 +92,11 @@
                                 </ul>
                         </div>
                         <div class="answer">
-                            
-                            <a href="#hide1" class="hide" id="hide1">Show answer</a>
-                            <a href="#show1" class="show" id="show1">Hide answer</a>
-                    
-                            <div class="list mt-25 mb-20">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque recusandae tempora, ipsa cum odio quisquam ad amet.</p>
+                            <button id="answerButton1" onclick="showAnswer3()" type="button" class="collapsible">Show answer</button>
+                            <div id="answerDiv3" class="content">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque recusandae tempora, ipsa cum odio quisquam ad amet.</p>
+                            </div> 
                             </div>
-                        </div>
                     </section>
                     <section class="box__content--question">
     
@@ -106,8 +104,8 @@
                 </section>
         </section>
 
-        <section class="box mb-20 bor-10 mb-20 b-shad"><!-- Question-Box 1-->
-            <button class="box__bookmark"><img src="img/bookmark-button.png" alt=""></button>
+        <section class="box mb-20 bor-10 mb-20 b-shad"><!-- Question-Box 4-->
+            <button id="bookmark4" class="box__bookmark bookmark__empty"><img src="" alt=""></button>
                 <section class="box__content">
                     <section class="box__content--question">
                         <h2 class="mtb-8 co-text">Question</h2>
@@ -122,14 +120,11 @@
                                 </ul>
                         </div>
                         <div class="answer">
-                            
-                            <a href="#hide1" class="hide" id="hide1">Show answer</a>
-                            <a href="#show1" class="show" id="show1">Hide answer</a>
-                    
-                            <div class="list mt-25 mb-20">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque recusandae tempora, ipsa cum odio quisquam ad amet.</p>
+                            <button id="answerButton1" onclick="showAnswer4()" type="button" class="collapsible">Show answer</button>
+                            <div id="answerDiv4" class="content">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque recusandae tempora, ipsa cum odio quisquam ad amet.</p>
+                            </div> 
                             </div>
-                        </div>
                     </section>
                     <section class="box__content--question">
     
@@ -138,28 +133,138 @@
         </section>
     </main>
 
+    <main id="bookmark_page" class="bookmark_page displaynone scrolling">
+            <section class="box bor-10 mb-20 b-shad"><!-- Question-Box 1-->
+                <button id="bookmark5" class="box__bookmark bookmark__empty"><img src="" alt=""></button>
+                    <section class="box__content">
+                        <section class="box__content--question">
+                            <h2 class="mtb-8 mtb-8 co-text">Question</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum cumque maxime nemo ullam aperiam delectus sapiente asperiores incidunt.</p>
+                            <div>
+                                    <ul class="box__content--list p-0">
+                                        <li class="bor-10 co-tag">Tag 1</li>
+                                        <li class="bor-10 co-tag">Tag 2</li>
+                                        <li class="bor-10 co-tag">Tag 3</li>
+                                        <li class="bor-10 co-tag">Tag 4</li>
+                                        <li class="bor-10 co-tag">Tag 5</li>
+                                    </ul>
+                            </div>
+                            <div class="answer">
+                                <button id="answerButton1" onclick="showAnswer5()" type="button" class="collapsible">Show answer</button>
+                                <div id="answerDiv5" class="content">
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque recusandae tempora, ipsa cum odio quisquam ad amet.</p>
+                                </div> 
+                                </div>
+                        </section>
+                        <section class="box__content--question">
+        
+                        </section>
+                    </section>
+            </section>
+        
+            <section class="box bor-10 mb-20 b-shad"> <!-- Question-Box 2-->
+                <button id="bookmark6" class="box__bookmark bookmark__empty"><img src="" alt=""></button>
+                    <section class="box__content">
+                        <section class="box__content--question">
+                            <h2 class="mtb-8 co-text">Question</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum cumque maxime nemo ullam aperiam delectus sapiente asperiores incidunt.</p>
+                            <div>
+                                    <ul class="box__content--list p-0">
+                                        <li class="box__content--li bor-10 co-tag">Tag 1</li>
+                                        <li class="box__content--li bor-10 co-tag">Tag 2</li>
+                                        <li class="box__content--li bor-10 co-tag">Tag 3</li>
+                                        <li class="box__content--li bor-10 co-tag">Tag 4</li>
+                                        <li class="box__content--li bor-10 co-tag">Tag 5</li>
+                                    </ul>
+                            </div>
+                            <div class="answer">
+                                <button id="answerButton1" onclick="showAnswer6()" type="button" class="collapsible">Show answer</button>
+                                <div id="answerDiv6" class="content">
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque recusandae tempora, ipsa cum odio quisquam ad amet.</p>
+                                </div> 
+                                </div>
+                        </section>
+                        <section class="box__content--question">
+        
+                        </section>
+                    </section>
+            </section>
+    </main>
+
+
+    <main id="create_page" class="create_page displaynone  m__create"> 
+            <form action="" method="get" class="box mb-20 mt-0 p-30 b-shad">
+                <h2 class="create__header co-text">New Question</h2>
+                
+                    <section class=""> <!-- Question-Form -->
+                        <label class="create__form--label" for="question">Add question:</label>
+                        <textarea name="question" id="input1" cols="30" rows="6"></textarea>
+                    </section>
+                    <section class=""> <!-- Answer-Form -->
+                        <label class="create__form--label" for="question">Add answer:</label>
+                        <textarea name="question" id="input2" cols="30" rows="6"></textarea>
+                    </section>
+    
+                    <section class=""> <!-- Question-Form -->
+                        <label class="create__form--label" for="question">Add tags:</label>
+                        <textarea name="question" id="input3" cols="30" rows="6"></textarea>
+                    </section>
+    <!-- Submit-Button fix! -->
+                    <section>
+                        <input class="create__form--button" onclick="resetInput" type="submit" value="Submit">
+                    </section>
+                </form>
+           
+    </main>
+
+ 
+    <main id="profile_page" class="profile_page displaynone scrolling"> 
+            <section>
+                <img class="bor-50 b-shad" src="img/profile-pic.jpg" alt=""> <!-- Profile photo -->
+                <p class="name">Sören Stein</p> <!-- Name -->
+            </section>
+               
+            <section class="box ml-10 mr-10 mb-20 p-30 b-shad">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsa aspernatur eius recusandae rem debitis.</p> <!-- About yourself -->
+     
+                <h2>Skills:</h2>
+                <div>
+                    <ul class="box__content--list p-0">
+                        <li class="bor-10 co-tag">Tag 1</li>
+                        <li class="bor-10 co-tag">Tag 2</li>
+                        <li class="bor-10 co-tag">Tag 3</li>
+                        <li class="bor-10 co-tag">Tag 4</li>
+                        <li class="bor-10 co-tag">Tag 5</li>
+                    </ul>
+                </div>
+            </section>
+        
+            <a class="create__form--button" href="">Logout</a>
+    
+    </main>    
+
     <footer class="footer co-bar b-shad"> <!-- Footer -->
         <ul class="co-bar footer__list">
             <li>
-                <a class=" co-wtext" href="index.html">
+                <a id="nav_home" class="co-wtext" href="#index_page">
                 <img src="img/home.png" alt="">
                 <div>Home</div>
                 </a>
             </li>
             <li>
-                <a class=" co-wtext" href="bookmarks.html">
+                <a id="nav_bookmark" class=" co-wtext" href="#bookmarks_page">
                 <img src="img/bookmarks.png" alt="">
                 <div>Bookmarks</div>
                 </a>
             </li>
             <li>
-                <a class=" co-wtext" href="create.html">
+                <a id="nav_create" class=" co-wtext" href="#creat_page">
                 <img src="img/plus.png" alt="">
                 <div>Create</div>
                 </a>
             </li>
             <li>
-                <a class=" co-wtext" href="profile.html">
+                <a id="nav_profile" class=" co-wtext" href="#profile_page">
                 <img src="img/profile.png" alt="">
                 <div class="mt-4">Profile</div>
                 </a>
