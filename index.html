@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/scss/styles.scss" />
     <title>Quiz-App</title>
     <script defer src="src/js/index.js"></script>
 </head>
@@ -12,9 +12,9 @@
 
 
     <header id="header1" class="header co-bar co-wtext b-shad">QUIZ-APP</header>
-    <header id="header2" class="header displaynone co-bar co-wtext b-shad">BOOKMARKS</header>
-    <header id="header3" class="header displaynone co-bar co-wtext b-shad">CREATE</header>
-    <header id="header4" class="header displaynone co-bar co-wtext b-shad">PROFILE</header>
+    <header id="header2" class="header hidden co-bar co-wtext b-shad">BOOKMARKS</header>
+    <header id="header3" class="header hidden co-bar co-wtext b-shad">CREATE</header>
+    <header id="header4" class="header hidden co-bar co-wtext b-shad">PROFILE</header>
 
     <main id="index_page" class="scrolling">
 
@@ -35,8 +35,8 @@
                         </div>
                        
                         <div class="answer">
-                        <button id="answerButton1" onclick="showAnswer1()" type="button" class="collapsible">Show answer</button>
-                        <div id="answerDiv1" class="content">
+                        <button  id="button-answer1" type="button" class="collapsible">Show answer</button>
+                        <div id="answer1" class="content hidden">
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque recusandae tempora, ipsa cum odio quisquam ad amet.</p>
                         </div> 
                         </div>
@@ -64,8 +64,8 @@
                                 </ul>
                         </div>
                         <div class="answer">
-                            <button id="answerButton1" onclick="showAnswer2()" type="button" class="collapsible">Show answer</button>
-                            <div id="answerDiv2" class="content">
+                            <button id="button-answer2" type="button" class="collapsible">Show answer</button>
+                            <div id="answer2" class="hidden content">
                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque recusandae tempora, ipsa cum odio quisquam ad amet.</p>
                             </div> 
                             </div>
@@ -92,8 +92,8 @@
                                 </ul>
                         </div>
                         <div class="answer">
-                            <button id="answerButton1" onclick="showAnswer3()" type="button" class="collapsible">Show answer</button>
-                            <div id="answerDiv3" class="content">
+                            <button id="button-answer3" type="button" class="collapsible">Show answer</button>
+                            <div id="answer3" class="hidden content">
                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque recusandae tempora, ipsa cum odio quisquam ad amet.</p>
                             </div> 
                             </div>
@@ -120,8 +120,8 @@
                                 </ul>
                         </div>
                         <div class="answer">
-                            <button id="answerButton1" onclick="showAnswer4()" type="button" class="collapsible">Show answer</button>
-                            <div id="answerDiv4" class="content">
+                            <button id="button-answer4" type="button" class="answerbutton collapsible">Show answer</button>
+                            <div id="answer4" class="hidden content">
                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque recusandae tempora, ipsa cum odio quisquam ad amet.</p>
                             </div> 
                             </div>
@@ -133,7 +133,7 @@
         </section>
     </main>
 
-    <main id="bookmark_page" class="bookmark_page displaynone scrolling">
+    <main id="bookmark_page" class="bookmark_page hidden scrolling">
             <section class="box bor-10 mb-20 b-shad"><!-- Question-Box 1-->
                 <button id="bookmark5" class="box__bookmark bookmark__empty"><img src="" alt=""></button>
                     <section class="box__content">
@@ -150,8 +150,8 @@
                                     </ul>
                             </div>
                             <div class="answer">
-                                <button id="answerButton1" onclick="showAnswer5()" type="button" class="collapsible">Show answer</button>
-                                <div id="answerDiv5" class="content">
+                                <button id="button-answer5" type="button" class="answerbutton collapsible">Show answer</button>
+                                <div id="answer5" class="hidden content">
                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque recusandae tempora, ipsa cum odio quisquam ad amet.</p>
                                 </div> 
                                 </div>
@@ -178,8 +178,8 @@
                                     </ul>
                             </div>
                             <div class="answer">
-                                <button id="answerButton1" onclick="showAnswer6()" type="button" class="collapsible">Show answer</button>
-                                <div id="answerDiv6" class="content">
+                                <button id="button-answer6" type="button" class="answerbutton collapsible">Show answer</button>
+                                <div id="answer6" class="hidden content">
                                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti doloremque recusandae tempora, ipsa cum odio quisquam ad amet.</p>
                                 </div> 
                                 </div>
@@ -192,7 +192,7 @@
     </main>
 
 
-    <main id="create_page" class="create_page displaynone  m__create"> 
+    <main id="create_page" class="create_page hidden  m__create"> 
             <form action="" method="get" class="box mb-20 mt-0 p-30 b-shad">
                 <h2 class="create__header co-text">New Question</h2>
                 
@@ -211,14 +211,14 @@
                     </section>
     <!-- Submit-Button fix! -->
                     <section>
-                        <input class="create__form--button" onclick="resetInput" type="submit" value="Submit">
+                        <input id="submit1" class="create__form--button" type="submit" value="Submit">
                     </section>
                 </form>
            
     </main>
 
  
-    <main id="profile_page" class="profile_page displaynone scrolling"> 
+    <main id="profile_page" class="profile_page hidden scrolling"> 
             <section>
                 <img class="bor-50 b-shad" src="img/profile-pic.jpg" alt=""> <!-- Profile photo -->
                 <p class="name">Sören Stein</p> <!-- Name -->
