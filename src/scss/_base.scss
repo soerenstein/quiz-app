@@ -33,8 +33,8 @@ header {
     justify-content: center;
 }
 
-.displaynone {
-    display: none;
+.hidden {
+    display: none !important;
 }
 
 ul > li {
