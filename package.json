@@ -4,7 +4,7 @@
   "description": "A simple app with questions and answers",
   "main": "index.html",
   "scripts": {
-    "start": "parcel index.html --public-url '.'"
+    "start": "parcel index.html"
   },
   "repository": {
     "type": "git",
@@ -23,3 +23,4 @@
     "sass": "^1.26.10"
   }
 }
+
