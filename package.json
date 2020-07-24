@@ -1,0 +1,26 @@
+{
+  "name": "quiz-app",
+  "version": "1.0.0",
+  "description": "A simple app with questions and answers",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soerenstein/quiz-app.git"
+  },
+  "author": "Sören Stein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soerenstein/quiz-app/issues"
+  },
+  "homepage": "https://github.com/soerenstein/quiz-app#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.10"
+  }
+}
+
