@@ -190,13 +190,13 @@ footer {
 }
 
 .bookmark__empty {
-  background: url(/bookmark-button.e897a8b7.png) no-repeat;
+  background: url(bookmark-button.e897a8b7.png) no-repeat;
   width: 40px;
   height: 40px;
 }
 
 .bookmark__filled {
-  background: url(/bookmarked.bce8e3de.png) no-repeat;
+  background: url(bookmarked.bce8e3de.png) no-repeat;
   width: 40px;
   height: 40px;
 }
@@ -295,4 +295,4 @@ footer {
   text-align: left;
 }
 
-/*# sourceMappingURL=/styles.cbb799b3.css.map */
+/*# sourceMappingURL=styles.cbb799b3.css.map */
